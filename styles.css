@@ -17,6 +17,20 @@ h1{
     
 }
 
+.special{
+    background-color: #97A660;
+    color: white;
+    border-radius: 10px;
+}
+
+.special > button{
+    background-color: #54592C;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    margin-top: 5px;
+}
+
 #divs-ilike{
     background-color: #54592C;
     color: white;
@@ -78,6 +92,11 @@ figcaption{
     background-color: #97A660;
 }
 
+#quote-container{
+    font-family: 'text-font';
+    font-size: 20px;
+}
+
 .audio-btn{
   background-color: #97A660; /* Green */
   border: none;
@@ -110,6 +129,8 @@ iframe{
     margin: auto;
    
 }
+
+
 
 
 @font-face{
