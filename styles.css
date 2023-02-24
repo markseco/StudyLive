@@ -2,30 +2,46 @@ body{
     background-color: #A2C7E5;
 }
 
-#juego{
-    height: 100px;
-}
+
 
 #container {
     background-color: #303A2B;
     color: white;
     text-align: center;
+    border-radius: 5px;
 }
 
 h1{
     text-align: center;
+    font-family: 'monteya-font';
+    font-size: 80px;
 }
 
 .row {
     display: flex;
+    column-gap: 40px;
 }
   
 .column {
-    flex: 50%;
-    border: solid black;
+    flex: 50%;    
 }
 
 figure {
     margin: 0;
+}
+
+#time{
+    font-family:'digital-clock-font';
+    font-size: 100px;
+}
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('digital-7.ttf');
+}
+
+@font-face{
+    font-family:'monteya-font';
+    src: url('Monteya.ttf');
 }
 
