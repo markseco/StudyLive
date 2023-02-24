@@ -1,20 +1,16 @@
 body{
-    background-color: #A2C7E5;
+    background-color: #A7CFF2;
 }
 
-
-
-#container {
-    background-color: #303A2B;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-}
 
 h1{
     text-align: center;
     font-family: 'monteya-font';
     font-size: 80px;
+}
+
+button{
+    font-family: 'button-font';
 }
 
 .row {
@@ -23,17 +19,60 @@ h1{
 }
   
 .column {
-    flex: 50%;    
+    flex: 50%;
+    background-color: #54592C;
+    color: white;
+    text-align: center;
+    border-radius: 5px;   
+    padding: 10px 5px 5px 5px;
 }
 
 figure {
     margin: 0;
 }
 
+figcaption{
+    font-family: 'text-font';
+}
+
 #time{
     font-family:'digital-clock-font';
     font-size: 100px;
 }
+
+.audio-btn{
+  background-color: #97A660; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#mydiv{
+    padding: 10px;
+    
+}
+
+#btn-div{
+    padding-top: 15px;
+}
+
+#game{
+    width: 10000px;
+    height: 1000px;
+}
+
+iframe{
+    width: 1200px;
+    height: 500px;
+    display: block;
+    margin: auto;
+   
+}
+
 
 @font-face{
     font-family:'digital-clock-font';
@@ -43,5 +82,15 @@ figure {
 @font-face{
     font-family:'monteya-font';
     src: url('Monteya.ttf');
+}
+
+@font-face{
+    font-family:'button-font';
+    src: url('MADEOkineSansPERSONALUSE-Bold.otf');
+}
+
+@font-face{
+    font-family:'text-font';
+    src: url('Astonpoliz.otf');
 }
 

@@ -22,21 +22,21 @@
         </div>
         <div class="column">
             <figure>
-    <figcaption>Listen to chill music to help you study:</figcaption>
-    <audio id="player">
-        <source  src="chill.mp3" type="audio/mpeg">
-    </audio>
-    <div> 
-        <button  onclick="document.getElementById('player').play()">Play</button> 
-        <button  onclick="document.getElementById('player').pause()">Pause</button> 
-        <button>Next Song</button>
-      </div>
-</figure>
+            <figcaption>Listen to chill music to help you study:</figcaption>
+            <audio id="audio">
+             <source  src="chill.mp3" type="audio/mpeg">
+            </audio>
+            <div id ="btn-div"> 
+                <button class="audio-btn" onclick="document.getElementById('audio').play()">PLAY</button> 
+                <button  class="audio-btn" onclick="document.getElementById('audio').pause()">PAUSE</button> 
+                <button class="audio-btn" onclick="next()">CHANGE SONG</button>
+            </div>
+            </figure>
         </div>
     </div>
-    <div class="row">
-        <div id="juego" class = "column">hola</div>
+    <div id="mydiv">
+    <iframe frameborder="0" allowfullscreen="true" scrolling="no" allowtransparency="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" id="game_drop" src="https://v6p9d9t4.ssl.hwcdn.net/html/7410934/index.html" allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated"></iframe>
     </div>
-
+    <script src="app.js"></script>
 </body>
 </html>
