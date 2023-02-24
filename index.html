@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Study Live</title>
+</head>
+<body>
+    <section><h1>Study Live</h1></section>
+    <div class="row">
+        <div class="column" id="counter">
+            <div id="container">
+                <div id="row" class="button-stop">
+                    <button>STOP</button>
+                    <button>Short</button>
+                    <button>Large</button>
+                </div>
+                <div id="time">25:00</div>
+            </div>
+        </div>
+        <div class="column">
+            <figure>
+    <figcaption>Listen to chill music to help you study:</figcaption>
+    <audio id="player">
+        <source  src="chill.mp3" type="audio/mpeg">
+    </audio>
+    <div> 
+        <button class="btn btn-primary" onclick="document.getElementById('player').play()">Play</button> 
+        <button class="btn btn-primary" onclick="document.getElementById('player').pause()">Pause</button> 
+      </div>
+</figure>
+        </div>
+    </div>
+    <div class="row">
+        <div id="juego" class = "column">hola</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
