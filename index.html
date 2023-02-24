@@ -9,34 +9,41 @@
 </head>
 <body>
     <section><h1>Study Live</h1></section>
-    <div class="row">
-        <div class="column" id="counter">
+
+    <div class="flex-body">
+        <div class="flex-row">
+          <div id="divs-ilike">
+            <h2>Pomodoro Timer</h2>
             <div id="container">
+                <div id="time"><i id="minutes">25</i>:<i id="seconds">00</i></div>
                 <div id="row" class="button-stop">
-                    <button>STOP</button>
-                    <button>Short</button>
-                    <button>Large</button>
+                    <button id ="start" onclick="start()">Start</button>
                 </div>
-                <div id="time">25:00</div>
             </div>
         </div>
-        <div class="column">
+        </div>
+        <div class="flex-column">
+          <div id="divs-ilike">
             <figure>
-            <figcaption>Listen to chill music to help you study:</figcaption>
-            <audio id="audio">
-             <source  src="chill.mp3" type="audio/mpeg">
-            </audio>
-            <div id ="btn-div"> 
-                <button class="audio-btn" onclick="document.getElementById('audio').play()">PLAY</button> 
-                <button  class="audio-btn" onclick="document.getElementById('audio').pause()">PAUSE</button> 
-                <button class="audio-btn" onclick="next()">CHANGE SONG</button>
-            </div>
-            </figure>
+                <figcaption>Listen to chill music to help you study:</figcaption>
+                <audio id="audio">
+                 <source  src="chill.mp3" type="audio/mpeg">
+                </audio>
+                <div id ="btn-div"> 
+                    <button class="audio-btn" onclick="document.getElementById('audio').play()">PLAY</button> 
+                    <button  class="audio-btn" onclick="document.getElementById('audio').pause()">PAUSE</button> 
+                    <button class="audio-btn" onclick="next()">CHANGE SONG</button>
+                </div>
+                </figure>
+         </div>
+          <div id="divs-ilike"></div>
         </div>
-    </div>
+      </div>
+
     <div id="mydiv">
     <iframe frameborder="0" allowfullscreen="true" scrolling="no" allowtransparency="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" id="game_drop" src="https://v6p9d9t4.ssl.hwcdn.net/html/7410934/index.html" allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated"></iframe>
     </div>
     <script src="app.js"></script>
+    <script src="pomodoro.js"></script>
 </body>
 </html>

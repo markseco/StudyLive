@@ -14,3 +14,5 @@ const songs = [
     audio.src = songs[index];
     audio.play();
   }
+
+
