@@ -41,8 +41,24 @@ h1{
 }
 
 #divider{
-    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+
+
+#divider>div{
+    height: 100px;
+    background-image: url('cloud.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    position: relative;
+
+}
+
+
 
 #divs-ilike{
     background-color: rgba(185,216,248);

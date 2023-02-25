@@ -17,31 +17,31 @@ function start() {
     // change the time
     seconds = 59;
 
-    let workMinutes = workTime - 1;
-    let breakMinutes = breakTime - 1;
+    let minutes = workTime - 1;
+    let minutesBreak = breakTime - 1;
 
     breakCount = 0;
 
     // countdown
     let timerFunction = () => {
         //change the display
-        document.getElementById('minutes').innerHTML = workMinutes;
+        document.getElementById('minutes').innerHTML = minutes;
         document.getElementById('seconds').innerHTML = seconds;
 
         // start
         seconds = seconds - 1;
 
         if(seconds === 0) {
-            workMinutes = workMinutes - 1;
-            if(workMinutes === -1 ){
+            minutes = minutes - 1;
+            if(minutes === -1 ){
                 if(breakCount % 2 === 0) {
                     // start break
-                    workMinutes = breakMinutes;
+                    minutes = minutesBreak;
                     breakCount++
 
                 }else {
                     // continue work
-                    workMinutes = workTime;
+                    minutes = workTime;
                     breakCount++
 
                 }

@@ -1,7 +1,7 @@
 const songs = [
     "chill.mp3",
-    "chill.mp3",
-    "chill.mp3",
+    "song2.mp3",
+    "song3.mp3",
     // add more songs as needed
   ];
   
@@ -14,5 +14,4 @@ const songs = [
     audio.src = songs[index];
     audio.play();
   }
-
 
