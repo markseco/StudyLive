@@ -1,6 +1,8 @@
 let workTime = 25;
 let breakTime = 5;
 
+let intervalId;
+
 let seconds = "00"
 
 // display
@@ -14,6 +16,8 @@ window.onload = () => {
 // start timer
 function start() {
     
+    clearInterval(intervalId);
+
     // change the time
     seconds = 59;
 
@@ -51,5 +55,5 @@ function start() {
     }
 
     // start countdown
-    setInterval(timerFunction, 1000); // 1000 = 1s
+    intervalId = setInterval(timerFunction, 1000); // 1000 = 1s
 }
